@@ -1,0 +1,24 @@
+Shape()
+    {
+        cout << "Default Constructor" << endl;
+        no_of_siedes = 0;
+        area = 0.0;
+        circumference = 0;
+    }
+
+Shape(const Shape &s)
+    {
+        cout<<"Copy Constructor Called"<<endl;
+        no_of_siedes = s.no_of_siedes;
+        area = s.area;
+        circumference = s.circumference;
+    }
+
+Shape s1 = Shape();
+    s1.display();
+
+    Shape s2 = Shape(4, 300.50, 400);
+    s2.display();
+
+    Shape s3 = s2;
+    s3.display();
